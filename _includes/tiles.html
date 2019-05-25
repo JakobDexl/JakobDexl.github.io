@@ -25,4 +25,19 @@
   </article>
   {% endif %}
   {% endfor %}
+  {% for page in site.pages %}
+  {% if site.tiles-source == 'menu' and menu.show_tile != false %}
+  {% if page.type == 'menu' %}
+  <article>
+    <span class="image">
+      <img src="{{ page.image }}" alt="" />
+    </span>
+    <header class="major">
+      <h3><a href="{{ page.url | relative_url  }}" class="link">{{ page.title }}</a></h3>
+      <p>{{ page.description }}</p>
+    </header>
+  </article>
+  {% endif %}
+  {% endif %}
+  {% endfor %}
 </section>

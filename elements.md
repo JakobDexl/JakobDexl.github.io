@@ -1,7 +1,8 @@
 ---
 layout: page
-title: Elements
+title: Elementsss
 nav-menu: true
+categories: page
 ---
 
 <!-- Main -->
