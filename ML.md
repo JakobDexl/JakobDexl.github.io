@@ -6,7 +6,7 @@ categories: ml
 nav-menu: true
 type: menu
 description: Classical ML algorithims and their implementations
-image: assets/images/myimage.gif
+image: assets/images/roman-mager.jpg
 author: null
 show_tile: true
 ---
