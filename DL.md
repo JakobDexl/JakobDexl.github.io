@@ -1,11 +1,13 @@
 ---
 layout: allpostsbycategory
-title: Machine Learning
-landing-title: 'ML'
-categories: ml
+title: DL
+landing-title: 'DL'
+
+categories: dl
+
 nav-menu: true
 type: menu
-description: Classical ML algorithims and their implementations
+description: Deep learning stuff
 image: assets/images/myimage.gif
 author: null
 show_tile: true

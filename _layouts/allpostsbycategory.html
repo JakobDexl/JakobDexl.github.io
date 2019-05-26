@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<!--
+Forty by HTML5 UP
+html5up.net | @ajlkn
+Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+
+{% include head.html %}
+
+<body>
+
+  {% include header.html %}
+
+
+  <!-- Main -->
+
+  <!-- One -->
+
+<section id="main" class="spotlights">
+  {% for cat in site.categories %}
+  {% if cat[0] == page.categories %}
+  {% for post in cat[1] %}
+  {% if post.title != 404 %}
+
+    <section>
+      <a href="generic.html" class="image">
+        {% if post.image %}<img src="{{ site.baseurl }}/{{ post.image }}" alt="" data-position="top center" />{% endif %}
+      </a>
+      <div class="content">
+        <div class="inner">
+          <header class="major">
+            <h3>{{ post.title }}</h3>
+          </header>
+
+
+          <p>{{ post.description }}</p>
+          <ul class="actions">
+            <li><a href="generic.html" class="button">Learn more</a></li>
+          </ul>
+        </div>
+      </div>
+      </section>
+      {% endif %}
+      {% endfor %}
+      {% endif %}
+      {% endfor %}
+
+
+
+  </section>
+
+  {% include footer.html %}
+
+</body>
+
+</html>

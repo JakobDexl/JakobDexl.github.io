@@ -40,6 +40,10 @@
 				display: none;
 			}
 
+			.image:hover {
+				cursor:pointer;
+			}
+
 			header {
 				position: relative;
 				z-index: 3;
