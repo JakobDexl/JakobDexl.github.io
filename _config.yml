@@ -17,7 +17,7 @@ permalink: /:categories/:title:output_ext
 # homepage tiles
 tiles-source: menu # accepts "posts" or "pages"
 tiles-count: 6
-
+post_color: 'white'
 # social settings
 500px_url:
 facebook_url:

@@ -6,7 +6,7 @@ categories: [ai, ml, dl]
 nav-menu: true
 type: menu
 description: Algorithims and their implementations
-image: assets/images/myimage.gif
+image: assets/images/0018.png
 author: null
 show_tile: true
 ---

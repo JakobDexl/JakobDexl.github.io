@@ -52,7 +52,7 @@ $$
 |            polar/ cylindric            |                            sphere                            |
 | :------------------------------------: | :----------------------------------------------------------: |
 | $$x=rcos\varphi\\ y=rsin\varphi\\z=t$$ | $$x=rsin\vartheta cos\varphi\\ y=rsin\vartheta sin\varphi\\ z=rcos\vartheta$$ |
-|             $$ |det| = r$$             |                $$|det| =r^{2}sin\vartheta $$                 |
+|             $$ \|det\| = r$$             |                $$\|det\| =r^{2}sin\vartheta $$                 |
 
 #### Determinant
 

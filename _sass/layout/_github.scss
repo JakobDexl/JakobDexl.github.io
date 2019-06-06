@@ -1,7 +1,13 @@
 
 .markdown {
-$background-color: _palette(white);
-$color: black;
+
+
+  $background-color: _palette(white);
+  $color: black;
+  background-color: $background-color;
+  color: $color;
+
+
 html {
     font-size: 16px;
 
@@ -13,6 +19,8 @@ body {
     font-family: "Open Sans","Clear Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
     color: rgb(51, 51, 51);
     line-height: 1.6;
+    background-color: $background-color;
+    color: &color;
 }
 
 #write {
@@ -79,22 +87,27 @@ h1 {
     font-size: 2.25em;
     line-height: 1.2;
     border-bottom: 1px solid #eee;
+    color: $color;
 }
 h2 {
    padding-bottom: .3em;
     font-size: 1.75em;
     line-height: 1.225;
     border-bottom: 1px solid #eee;
+    color: $color;
 }
 h3 {
     font-size: 1.5em;
     line-height: 1.43;
+    color: $color;
 }
 h4 {
     font-size: 1.25em;
+    color: $color;
 }
 h5 {
     font-size: 1em;
+    color: $color;
 }
 h6 {
    font-size: 1em;
