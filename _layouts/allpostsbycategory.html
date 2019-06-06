@@ -18,8 +18,10 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
   <!-- One -->
 
 <section id="main" class="spotlights">
+
+  {% for pcat in page.categories %}
   {% for cat in site.categories %}
-  {% if cat[0] == page.categories %}
+  {% if cat[0] == pcat %}
   {% for post in cat[1] %}
   {% if post.title != 404 %}
 
@@ -45,7 +47,7 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
       {% endfor %}
       {% endif %}
       {% endfor %}
-
+      {% endfor %}
 
 
   </section>

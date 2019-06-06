@@ -1,13 +1,11 @@
 ---
 layout: allpostsbycategory
-title: DL
-landing-title: 'DL'
-
-categories: dl
-
+title: Artificial Intelligence
+landing-title: 'AI'
+categories: [ai, ml, dl]
 nav-menu: true
 type: menu
-description: Deep learning stuff
+description: Algorithims and their implementations
 image: assets/images/myimage.gif
 author: null
 show_tile: true
