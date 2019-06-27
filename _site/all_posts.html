@@ -12,6 +12,7 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	<!--[if lte IE 8]><script src="/assets/js/ie/html5shiv.js"></script><![endif]-->
 	<link rel="stylesheet" href="/assets/css/main.css" />
+
 	<!--[if lte IE 9]><link rel="stylesheet" href="/assets/css/ie9.css" /><![endif]-->
 	<!--[if lte IE 8]><link rel="stylesheet" href="/assets/css/ie8.css" /><![endif]-->
 </head>
@@ -316,19 +317,19 @@ u_x(x,y) = 2x, and \,\,u_y(x,y)=2y \\
 
 <h3 id="generic">Generic</h3>
 
-<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Element</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;</span> <span class="o">{</span>
-    <span class="kd">public</span> <span class="n">T</span> <span class="n">value</span><span class="o">;</span>
-    <span class="kd">public</span> <span class="n">Element</span> <span class="n">next</span><span class="o">;</span>
-    <span class="kd">public</span> <span class="nf">Element</span><span class="o">(</span><span class="n">T</span> <span class="n">value</span><span class="o">)</span> <span class="o">{</span>
-        <span class="k">this</span><span class="o">.</span><span class="na">value</span> <span class="o">=</span> <span class="n">value</span><span class="o">;</span>
-        <span class="k">this</span><span class="o">.</span><span class="na">next</span> <span class="o">=</span> <span class="kc">null</span><span class="o">;</span>
-    <span class="o">}</span>
-<span class="o">}</span>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">public</span> <span class="k">class</span> <span class="nc">Element</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;</span> <span class="p">{</span>
+    <span class="n">public</span> <span class="n">T</span> <span class="n">value</span><span class="p">;</span>
+    <span class="n">public</span> <span class="n">Element</span> <span class="nb">next</span><span class="p">;</span>
+    <span class="n">public</span> <span class="n">Element</span><span class="p">(</span><span class="n">T</span> <span class="n">value</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">this</span><span class="o">.</span><span class="n">value</span> <span class="o">=</span> <span class="n">value</span><span class="p">;</span>
+        <span class="n">this</span><span class="o">.</span><span class="nb">next</span> <span class="o">=</span> <span class="n">null</span><span class="p">;</span>
+    <span class="p">}</span>
+<span class="p">}</span>
 
-<span class="n">Integer</span> <span class="n">i</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Integer</span><span class="o">(</span><span class="mi">10</span><span class="o">);</span>
-<span class="n">Element</span><span class="o">&lt;</span><span class="n">Integer</span><span class="o">&gt;</span> <span class="n">e1</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Element</span><span class="o">&lt;</span><span class="n">Integer</span><span class="o">&gt;(</span><span class="n">i</span><span class="o">);</span>
-<span class="n">Double</span> <span class="n">d</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Double</span><span class="o">(</span><span class="mf">13.2</span><span class="o">);</span>
-<span class="n">Element</span><span class="o">&lt;</span><span class="n">Double</span><span class="o">&gt;</span> <span class="n">e2</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Element</span><span class="o">&lt;</span><span class="n">Double</span><span class="o">&gt;(</span><span class="n">d</span><span class="o">);</span>
+<span class="n">Integer</span> <span class="n">i</span> <span class="o">=</span> <span class="n">new</span> <span class="n">Integer</span><span class="p">(</span><span class="mi">10</span><span class="p">);</span>
+<span class="n">Element</span><span class="o">&lt;</span><span class="n">Integer</span><span class="o">&gt;</span> <span class="n">e1</span> <span class="o">=</span> <span class="n">new</span> <span class="n">Element</span><span class="o">&lt;</span><span class="n">Integer</span><span class="o">&gt;</span><span class="p">(</span><span class="n">i</span><span class="p">);</span>
+<span class="n">Double</span> <span class="n">d</span> <span class="o">=</span> <span class="n">new</span> <span class="n">Double</span><span class="p">(</span><span class="mf">13.2</span><span class="p">);</span>
+<span class="n">Element</span><span class="o">&lt;</span><span class="n">Double</span><span class="o">&gt;</span> <span class="n">e2</span> <span class="o">=</span> <span class="n">new</span> <span class="n">Element</span><span class="o">&lt;</span><span class="n">Double</span><span class="o">&gt;</span><span class="p">(</span><span class="n">d</span><span class="p">);</span>
 </code></pre></div></div>
 
 <div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">public</span> <span class="kd">class</span> <span class="nc">FIFO</span><span class="o">&lt;</span><span class="n">E</span><span class="o">&gt;</span> <span class="kd">extends</span> <span class="n">BasicList</span><span class="o">&lt;</span><span class="n">E</span><span class="o">&gt;</span> <span class="o">{</span>
@@ -405,7 +406,7 @@ ggT ( a , b ) = \begin{cases}a\qquad \qquad \qquad \quad falls\qquad a=b\\ ggT (
 • length: gibt die Länge der Liste zurück
 • isEmpty: testet, ob Liste leer ist</p>
 
-<p><img src="/mnt/Data/Knowledge/tutorials/aud/Liste.png" alt="" /></p>
+<!-- ![](/mnt/Data/Knowledge/tutorials/aud/Liste.png) -->
 
 <div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">/</span> <span class="n">Hilfsklasse</span> <span class="n">fuer</span> <span class="n">ein</span> <span class="n">Listenelement</span>
 <span class="kd">class</span> <span class="nc">Element</span> <span class="o">{</span>
@@ -500,13 +501,17 @@ Warteschlange</li>
       <th>preorder</th>
       <th>postorder</th>
       <th>inorder</th>
+      <th> </th>
+      <th> </th>
     </tr>
   </thead>
   <tbody>
     <tr>
+      <td>&lt;!–</td>
       <td><img src="/mnt/Data/Knowledge/tutorials/aud/preorder.png" alt="" /></td>
       <td><img src="/mnt/Data/Knowledge/tutorials/aud/postorder.png" alt="" /></td>
       <td><img src="/mnt/Data/Knowledge/tutorials/aud/inorder.png" alt="" /></td>
+      <td>–&gt;</td>
     </tr>
   </tbody>
 </table>
@@ -693,133 +698,132 @@ Warteschlange</li>
 
 <h6 id="höhe">Höhe</h6>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
-</code></pre></div></div>
-
 <h6 id="traversieren-1">Traversieren</h6>
 
-<center> <i>preorder (begin)</i><center />
+<p>// <center> <i>preorder (begin)</i><center></center></center></p>
 
-```java
-public void preOrderTraverse(Node n){
-    if(node != null){
-***     System.out.println(" " + n.value);
-        preOrderTraverse(node.left);
-        preOrderTraverse(node.right);
-    }
-}
-```
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">public</span> <span class="kt">void</span> <span class="nf">preOrderTraverse</span><span class="o">(</span><span class="n">Node</span> <span class="n">n</span><span class="o">){</span>
+    <span class="k">if</span><span class="o">(</span><span class="n">node</span> <span class="o">!=</span> <span class="kc">null</span><span class="o">){</span>
+<span class="o">***</span>     <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">" "</span> <span class="o">+</span> <span class="n">n</span><span class="o">.</span><span class="na">value</span><span class="o">);</span>
+        <span class="n">preOrderTraverse</span><span class="o">(</span><span class="n">node</span><span class="o">.</span><span class="na">left</span><span class="o">);</span>
+        <span class="n">preOrderTraverse</span><span class="o">(</span><span class="n">node</span><span class="o">.</span><span class="na">right</span><span class="o">);</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div></div>
 
+<p>// <center> <i>postorder (end)</i><center></center></center></p>
 
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">public</span> <span class="kt">void</span> <span class="nf">postOrderTraverse</span><span class="o">(</span><span class="n">Node</span> <span class="n">n</span><span class="o">){</span>
+    <span class="k">if</span><span class="o">(</span><span class="n">node</span> <span class="o">!=</span> <span class="kc">null</span><span class="o">){</span>
+        <span class="n">postOrderTraverse</span><span class="o">(</span><span class="n">node</span><span class="o">.</span><span class="na">left</span><span class="o">);</span>
+        <span class="n">postOrderTraverse</span><span class="o">(</span><span class="n">node</span><span class="o">.</span><span class="na">right</span><span class="o">);</span>
+<span class="o">***</span>     <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">" "</span> <span class="o">+</span> <span class="n">n</span><span class="o">.</span><span class="na">value</span><span class="o">);</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div></div>
 
-<center> <i>postorder (end)</i><center />
+<p>. <center> <i>inorder (middle)</i><center></center></center></p>
 
-```java
-public void postOrderTraverse(Node n){
-    if(node != null){
-        postOrderTraverse(node.left);
-        postOrderTraverse(node.right);
-***     System.out.println(" " + n.value);
-    }
-}
-```
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">public</span> <span class="kt">void</span> <span class="nf">inOrderTraverse</span><span class="o">(</span><span class="n">Node</span> <span class="n">n</span><span class="o">){</span>
+    <span class="k">if</span><span class="o">(</span><span class="n">node</span> <span class="o">!=</span> <span class="kc">null</span><span class="o">){</span>
+        <span class="n">inOrderTraverse</span><span class="o">(</span><span class="n">node</span><span class="o">.</span><span class="na">left</span><span class="o">);</span>
+<span class="o">***</span>     <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">" "</span> <span class="o">+</span> <span class="n">n</span><span class="o">.</span><span class="na">value</span><span class="o">);</span>
+        <span class="n">inOrderTraverse</span><span class="o">(</span><span class="n">node</span><span class="o">.</span><span class="na">right</span><span class="o">);</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div></div>
 
+<h4 id="avl-baum">AVL Baum</h4>
 
+<p>Rotationen</p>
 
-<center> <i>inorder (middle)</i><center />
+<h3 id="hashing">Hashing</h3>
 
-```java
-public void inOrderTraverse(Node n){
-    if(node != null){
-        inOrderTraverse(node.left);
-***     System.out.println(" " + n.value);
-        inOrderTraverse(node.right);
-    }
-}
-```
+<p>// <center> Hashfunktion $x\, mod \,y$ &lt;center / &gt;</center></p>
 
+<h6 id="offenes-hashing">Offenes Hashing</h6>
 
+<ul>
+  <li>keine Kollision</li>
+  <li>realisiert mit verketteten Listen</li>
+  <li>großerer Speicherbedarf</li>
+  <li>daraus folgt längere Suchzeiten</li>
+</ul>
 
-#### AVL Baum
+<h6 id="geschlossenes-hashing">Geschlossenes Hashing</h6>
 
-Rotationen
+<ul>
+  <li>Surjektiv/ nicht injektiv, verursacht Kollisionen</li>
+  <li>Kollisionsfunktion</li>
+  <li>Optimale Größe = y</li>
+  <li>Löschen muss markiert werden</li>
+  <li>Max. Auslastung 80%</li>
+  <li>Worst: =(n), Average: O(1)</li>
+</ul>
 
-### Hashing
+<h2 id="suche">Suche</h2>
 
-<center> Hashfunktion $x\, mod \,y$ &lt;center / &gt;
+<h4 id="lineare-suche">Lineare Suche</h4>
 
-###### Offenes Hashing
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">int</span> <span class="nf">linearSearch</span><span class="o">(</span><span class="n">Data</span><span class="o">[]</span> <span class="n">s</span><span class="o">,</span> <span class="n">Key</span> <span class="n">x</span><span class="o">)</span> <span class="o">{</span>
+    <span class="c1">// Iteration (und Reduktion)</span>
+    <span class="k">for</span> <span class="o">(</span><span class="kt">int</span> <span class="n">p</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span> <span class="n">p</span> <span class="o">&lt;</span> <span class="n">s</span><span class="o">.</span><span class="na">length</span><span class="o">;</span> <span class="n">p</span><span class="o">++)</span> <span class="o">{</span>
+    	<span class="k">if</span> <span class="o">(</span><span class="n">s</span><span class="o">[</span><span class="n">p</span><span class="o">].</span><span class="na">key</span><span class="o">.</span><span class="na">equals</span><span class="o">(</span><span class="n">x</span><span class="o">))</span> <span class="o">{</span>
+    	<span class="c1">// Trivialfall: Suche erfolgreich</span>
+    	<span class="k">return</span> <span class="n">p</span><span class="o">;</span>
+    	<span class="o">}</span>
+    <span class="o">}</span>
+    <span class="c1">// Trivialfall: Suche erfolglos</span>
+    <span class="k">return</span> <span class="o">-</span><span class="mi">1</span><span class="o">;</span>
+<span class="o">}</span>
+</code></pre></div></div>
 
-- keine Kollision
-- realisiert mit verketteten Listen
-- großerer Speicherbedarf
-- daraus folgt längere Suchzeiten
+<h4 id="binäre-suche">Binäre Suche</h4>
 
-###### Geschlossenes Hashing
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">int</span> <span class="nf">binarySearch</span><span class="o">(</span><span class="n">Data</span><span class="o">[]</span> <span class="n">s</span><span class="o">,</span> <span class="n">Key</span> <span class="n">x</span><span class="o">,</span> <span class="kt">int</span> <span class="n">left</span><span class="o">,</span> <span class="kt">int</span> <span class="n">right</span> <span class="o">)</span> <span class="o">{</span>
+    <span class="c1">// Initialisierung</span>
+    <span class="kt">int</span> <span class="n">p</span> <span class="o">=</span> <span class="o">(</span><span class="n">left</span> <span class="o">+</span> <span class="n">right</span><span class="o">)</span> <span class="o">/</span> <span class="mi">2</span><span class="o">;</span>
+    <span class="kt">int</span> <span class="n">c</span> <span class="o">=</span> <span class="n">s</span><span class="o">[</span><span class="n">p</span><span class="o">].</span><span class="na">key</span><span class="o">.</span><span class="na">compareTo</span><span class="o">(</span><span class="n">x</span><span class="o">);</span>
+    <span class="c1">// Trivialfall: Element gefunden</span>
+    <span class="k">if</span> <span class="o">(</span><span class="n">c</span> <span class="o">==</span> <span class="mi">0</span><span class="o">)</span> <span class="k">return</span> <span class="n">p</span><span class="o">;</span>
+    <span class="c1">// Trivialfall: Suche erfolglos</span>
+    <span class="k">if</span> <span class="o">(</span><span class="n">left</span> <span class="o">==</span> <span class="n">right</span><span class="o">)</span> <span class="k">return</span> <span class="o">-</span><span class="mi">1</span><span class="o">;</span>
+    <span class="c1">// Rekursion (und Reduktion)</span>
+    <span class="k">if</span> <span class="o">(</span><span class="n">c</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="o">)</span> <span class="o">{</span>
+    	<span class="k">if</span> <span class="o">(</span><span class="n">p</span> <span class="o">&gt;</span> <span class="n">left</span><span class="o">)</span> <span class="k">return</span> <span class="n">binarySearch</span><span class="o">(</span><span class="n">s</span><span class="o">,</span> <span class="n">x</span><span class="o">,</span> <span class="n">left</span><span class="o">,</span> <span class="n">p</span><span class="o">-</span><span class="mi">1</span><span class="o">);</span>
+    	<span class="k">else</span> <span class="k">return</span> <span class="o">-</span><span class="mi">1</span><span class="o">;</span>
+    <span class="o">}</span> <span class="k">else</span> <span class="o">{</span>
+        <span class="k">if</span> <span class="o">(</span><span class="n">p</span> <span class="o">&lt;</span> <span class="n">right</span><span class="o">)</span> <span class="k">return</span> <span class="n">binarySearch</span><span class="o">(</span><span class="n">s</span><span class="o">,</span> <span class="n">x</span><span class="o">,</span> <span class="n">p</span><span class="o">+</span><span class="mi">1</span><span class="o">,</span> <span class="n">right</span><span class="o">);</span>
+        <span class="k">else</span> <span class="nf">return</span> <span class="o">(-</span><span class="mi">1</span><span class="o">);</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div></div>
 
-- Surjektiv/ nicht injektiv, verursacht Kollisionen
-- Kollisionsfunktion
-- Optimale Größe = y
-- Löschen muss markiert werden
-- Max. Auslastung 80%
-- Worst: =(n), Average: O(1)
+<h2 id="sortieren">Sortieren</h2>
 
-## Suche
+<h3 id="greedy">Greedy</h3>
 
-#### Lineare Suche
+<h4 id="selectionsort">Selectionsort</h4>
+<p><strong>Fat</strong></p>
 
-```java
-int linearSearch(Data[] s, Key x) {
-    // Iteration (und Reduktion)
-    for (int p = 0; p &lt; s.length; p++) {
-    	if (s[p].key.equals(x)) {
-    	// Trivialfall: Suche erfolgreich
-    	return p;
-    	}
-    }
-    // Trivialfall: Suche erfolglos
-    return -1;
-}
-```
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center"><strong>best</strong></th>
+      <th style="text-align: center">average</th>
+      <th style="text-align: center">worst</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center">O(n²)</td>
+      <td style="text-align: center">O(n²)</td>
+      <td style="text-align: center">O(n²)</td>
+    </tr>
+  </tbody>
+</table>
 
-
-
-#### Binäre Suche
-
-```java
-int binarySearch(Data[] s, Key x, int left, int right ) {
-    // Initialisierung
-    int p = (left + right) / 2;
-    int c = s[p].key.compareTo(x);
-    // Trivialfall: Element gefunden
-    if (c == 0) return p;
-    // Trivialfall: Suche erfolglos
-    if (left == right) return -1;
-    // Rekursion (und Reduktion)
-    if (c &gt; 0) {
-    	if (p &gt; left) return binarySearch(s, x, left, p-1);
-    	else return -1;
-    } else {
-        if (p &lt; right) return binarySearch(s, x, p+1, right);
-        else return (-1);
-    }
-}
-```
-
-
-
-## Sortieren
-
-### Greedy
-
-#### Selectionsort
-
-| best  | average | worst |
-| :---: | :-----: | :---: |
-| O(n²) |  O(n²)  | O(n²) |
-
-```Java
-public static void selectionSort(Comparable[] elemente) {
+<pre><code class="language-Java">public static void selectionSort(Comparable[] elemente) {
     for (int i = 0; i &lt; elemente.length - 1; i++) {
         // Bestimme Minimum im Feld elemente ab Position i
         Comparable min = elemente[i];
@@ -838,418 +842,485 @@ public static void selectionSort(Comparable[] elemente) {
         }
 	}
 }
-```
+</code></pre>
 
+<h4 id="insertionsort">Insertionsort</h4>
 
+<p>####</p>
 
-#### Insertionsort
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">best</th>
+      <th style="text-align: center">average</th>
+      <th style="text-align: center">worst</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center">O(n)</td>
+      <td style="text-align: center">O(n²)</td>
+      <td style="text-align: center">O(n²)</td>
+    </tr>
+  </tbody>
+</table>
 
-####
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">insertionSort</span><span class="o">(</span><span class="n">Comparable</span><span class="o">[]</span> <span class="n">elemente</span><span class="o">)</span> <span class="o">{</span>
+    <span class="k">for</span> <span class="o">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">1</span><span class="o">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">elemente</span><span class="o">.</span><span class="na">length</span><span class="o">;</span> <span class="n">i</span><span class="o">++)</span> <span class="o">{</span>
+    <span class="c1">// Füge Element i in die ersten i+1 Positionen des Feldes elemente ein</span>
+        <span class="n">Comparable</span> <span class="n">el</span> <span class="o">=</span> <span class="n">elemente</span><span class="o">[</span><span class="n">i</span><span class="o">];</span>
+        <span class="kt">int</span> <span class="n">j</span> <span class="o">=</span> <span class="n">i</span> <span class="o">-</span> <span class="mi">1</span><span class="o">;</span>
+        <span class="k">while</span> <span class="o">((</span><span class="n">j</span> <span class="o">&gt;=</span> <span class="mi">0</span><span class="o">)</span> <span class="o">&amp;&amp;</span> <span class="o">(</span><span class="n">el</span><span class="o">.</span><span class="na">compareTo</span><span class="o">(</span><span class="n">elemente</span><span class="o">[</span><span class="n">j</span><span class="o">])</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="o">))</span> <span class="o">{</span>
+        	<span class="n">j</span><span class="o">--;</span>
+        <span class="o">}</span>
+        <span class="n">System</span><span class="o">.</span><span class="na">arraycopy</span><span class="o">(</span><span class="n">elemente</span><span class="o">,</span> <span class="n">j</span> <span class="o">+</span> <span class="mi">1</span><span class="o">,</span> <span class="n">elemente</span><span class="o">,</span> <span class="n">j</span> <span class="o">+</span> <span class="mi">2</span><span class="o">,</span> <span class="n">i</span> <span class="o">-</span> <span class="mi">1</span> <span class="o">-</span> <span class="n">j</span><span class="o">);</span>
+        <span class="n">elemente</span><span class="o">[</span><span class="n">j</span> <span class="o">+</span> <span class="mi">1</span><span class="o">]</span> <span class="o">=</span> <span class="n">el</span><span class="o">;</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div></div>
 
-| best | average | worst |
-| :--: | :-----: | :---: |
-| O(n) |  O(n²)  | O(n²) |
+<h4 id="bubblesort">Bubblesort</h4>
 
-```java
-public static void insertionSort(Comparable[] elemente) {
-    for (int i = 1; i &lt; elemente.length; i++) {
-    // Füge Element i in die ersten i+1 Positionen des Feldes elemente ein
-        Comparable el = elemente[i];
-        int j = i - 1;
-        while ((j &gt;= 0) &amp;&amp; (el.compareTo(elemente[j]) &lt; 0)) {
-        	j--;
-        }
-        System.arraycopy(elemente, j + 1, elemente, j + 2, i - 1 - j);
-        elemente[j + 1] = el;
-    }
-}
-```
+<p>####</p>
 
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">best</th>
+      <th style="text-align: center">average</th>
+      <th style="text-align: center">worst</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center">O(n)</td>
+      <td style="text-align: center">O(n²)</td>
+      <td style="text-align: center">O(n²)</td>
+    </tr>
+  </tbody>
+</table>
 
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">bubbleSort</span><span class="o">(</span><span class="n">Comparable</span><span class="o">[]</span> <span class="n">elemente</span><span class="o">)</span> <span class="o">{</span>
+    <span class="k">for</span> <span class="o">(</span><span class="kt">int</span> <span class="n">j</span> <span class="o">=</span> <span class="n">elemente</span><span class="o">.</span><span class="na">length</span> <span class="o">-</span> <span class="mi">1</span><span class="o">;</span> <span class="n">j</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="o">;</span> <span class="n">j</span><span class="o">--)</span> <span class="o">{</span>
+        <span class="kt">boolean</span> <span class="n">vertauscht</span> <span class="o">=</span> <span class="kc">false</span><span class="o">;</span>
+        <span class="k">for</span> <span class="o">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">j</span><span class="o">;</span> <span class="n">i</span><span class="o">++)</span> <span class="o">{</span>
+            <span class="k">if</span> <span class="o">(</span><span class="n">elemente</span><span class="o">[</span><span class="n">i</span><span class="o">].</span><span class="na">compareTo</span><span class="o">(</span><span class="n">elemente</span><span class="o">[</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="o">])</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="o">)</span> <span class="o">{</span>
+                <span class="n">Comparable</span> <span class="n">tmp</span> <span class="o">=</span> <span class="n">elemente</span><span class="o">[</span><span class="n">i</span><span class="o">];</span>
+                <span class="n">elemente</span><span class="o">[</span><span class="n">i</span><span class="o">]</span> <span class="o">=</span> <span class="n">elemente</span><span class="o">[</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="o">];</span>
+                <span class="n">elemente</span><span class="o">[</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="o">]</span> <span class="o">=</span> <span class="n">tmp</span><span class="o">;</span>
+                <span class="n">vertauscht</span> <span class="o">=</span> <span class="kc">true</span><span class="o">;</span>
+            <span class="o">}</span>
+        <span class="o">}</span>
+        <span class="k">if</span> <span class="o">(!</span><span class="n">vertauscht</span><span class="o">)</span> <span class="k">break</span><span class="o">;</span>
+        <span class="c1">// Vorzeitiger Abbruch, da sich nichts mehr ändert</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div></div>
 
-#### Bubblesort
+<h4 id="heapsort">Heapsort</h4>
 
-####
+<p>####</p>
 
-| best | average | worst |
-| :--: | :-----: | :---: |
-| O(n) |  O(n²)  | O(n²) |
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">best</th>
+      <th style="text-align: center">average</th>
+      <th style="text-align: center">worst</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center">O(n log n)</td>
+      <td style="text-align: center">O(n log n)</td>
+      <td style="text-align: center">O(n log n)</td>
+    </tr>
+  </tbody>
+</table>
 
-```java
-public static void bubbleSort(Comparable[] elemente) {
-    for (int j = elemente.length - 1; j &gt; 0; j--) {
-        boolean vertauscht = false;
-        for (int i = 0; i &lt; j; i++) {
-            if (elemente[i].compareTo(elemente[i+1]) &gt; 0) {
-                Comparable tmp = elemente[i];
-                elemente[i] = elemente[i+1];
-                elemente[i+1] = tmp;
-                vertauscht = true;
-            }
-        }
-        if (!vertauscht) break;
-        // Vorzeitiger Abbruch, da sich nichts mehr ändert
-    }
-}
-```
-
-
-
-#### Heapsort
-
-####
-
-|    best    |  average   |   worst    |
-| :--------: | :--------: | :--------: |
-| O(n log n) | O(n log n) | O(n log n) |
-
-```java
-/**
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cm">/**
 * Wiederherstellung der Heap-Eigenschaft durch Einsinkenlassen von Element i
-*/
-private static void heapify(Comparable[] elemente, int i, int k) {
-    int l = 2 * i + 1;
-    // Index des linken Teilbaums
-    int r = l + 1;
-    // Index des rechten Teilbaums
-    if ((l &lt;= k) &amp;&amp; (r &gt; k)) {
-        // Nur ein Nachfolger (= linker Teilbaum) vorhanden
-        if (elemente[i].compareTo(elemente[l]) &lt; 0) {
-        	vertausche(elemente, i, l);
-        }
-    } else if (r &lt;= k) {
-        int n = elemente[l].compareTo(elemente[r]) &gt; 0 ? l : r;
-        if (elemente[i].compareTo(elemente[n]) &lt; 0) {
-       		vertausche(elemente, i, n);
-        	heapify(elemente, n, k);
-        }
-    }
-}
+*/</span>
+<span class="kd">private</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">heapify</span><span class="o">(</span><span class="n">Comparable</span><span class="o">[]</span> <span class="n">elemente</span><span class="o">,</span> <span class="kt">int</span> <span class="n">i</span><span class="o">,</span> <span class="kt">int</span> <span class="n">k</span><span class="o">)</span> <span class="o">{</span>
+    <span class="kt">int</span> <span class="n">l</span> <span class="o">=</span> <span class="mi">2</span> <span class="o">*</span> <span class="n">i</span> <span class="o">+</span> <span class="mi">1</span><span class="o">;</span>
+    <span class="c1">// Index des linken Teilbaums</span>
+    <span class="kt">int</span> <span class="n">r</span> <span class="o">=</span> <span class="n">l</span> <span class="o">+</span> <span class="mi">1</span><span class="o">;</span>
+    <span class="c1">// Index des rechten Teilbaums</span>
+    <span class="k">if</span> <span class="o">((</span><span class="n">l</span> <span class="o">&lt;=</span> <span class="n">k</span><span class="o">)</span> <span class="o">&amp;&amp;</span> <span class="o">(</span><span class="n">r</span> <span class="o">&gt;</span> <span class="n">k</span><span class="o">))</span> <span class="o">{</span>
+        <span class="c1">// Nur ein Nachfolger (= linker Teilbaum) vorhanden</span>
+        <span class="k">if</span> <span class="o">(</span><span class="n">elemente</span><span class="o">[</span><span class="n">i</span><span class="o">].</span><span class="na">compareTo</span><span class="o">(</span><span class="n">elemente</span><span class="o">[</span><span class="n">l</span><span class="o">])</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="o">)</span> <span class="o">{</span>
+        	<span class="n">vertausche</span><span class="o">(</span><span class="n">elemente</span><span class="o">,</span> <span class="n">i</span><span class="o">,</span> <span class="n">l</span><span class="o">);</span>
+        <span class="o">}</span>
+    <span class="o">}</span> <span class="k">else</span> <span class="k">if</span> <span class="o">(</span><span class="n">r</span> <span class="o">&lt;=</span> <span class="n">k</span><span class="o">)</span> <span class="o">{</span>
+        <span class="kt">int</span> <span class="n">n</span> <span class="o">=</span> <span class="n">elemente</span><span class="o">[</span><span class="n">l</span><span class="o">].</span><span class="na">compareTo</span><span class="o">(</span><span class="n">elemente</span><span class="o">[</span><span class="n">r</span><span class="o">])</span> <span class="o">&gt;</span> <span class="mi">0</span> <span class="o">?</span> <span class="n">l</span> <span class="o">:</span> <span class="n">r</span><span class="o">;</span>
+        <span class="k">if</span> <span class="o">(</span><span class="n">elemente</span><span class="o">[</span><span class="n">i</span><span class="o">].</span><span class="na">compareTo</span><span class="o">(</span><span class="n">elemente</span><span class="o">[</span><span class="n">n</span><span class="o">])</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="o">)</span> <span class="o">{</span>
+       		<span class="n">vertausche</span><span class="o">(</span><span class="n">elemente</span><span class="o">,</span> <span class="n">i</span><span class="o">,</span> <span class="n">n</span><span class="o">);</span>
+        	<span class="n">heapify</span><span class="o">(</span><span class="n">elemente</span><span class="o">,</span> <span class="n">n</span><span class="o">,</span> <span class="n">k</span><span class="o">);</span>
+        <span class="o">}</span>
+    <span class="o">}</span>
+<span class="o">}</span>
 
-public static void heapSort(Comparable[] elemente) {
-    int n = elemente.length;
-    // Phase 1: Aufbau der Halde
-    for (int i = n / 2; i &gt;= 0; i--) {
-    	heapify(elemente, i, n - 1);
-    }
-    /*
+<span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">heapSort</span><span class="o">(</span><span class="n">Comparable</span><span class="o">[]</span> <span class="n">elemente</span><span class="o">)</span> <span class="o">{</span>
+    <span class="kt">int</span> <span class="n">n</span> <span class="o">=</span> <span class="n">elemente</span><span class="o">.</span><span class="na">length</span><span class="o">;</span>
+    <span class="c1">// Phase 1: Aufbau der Halde</span>
+    <span class="k">for</span> <span class="o">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="n">n</span> <span class="o">/</span> <span class="mi">2</span><span class="o">;</span> <span class="n">i</span> <span class="o">&gt;=</span> <span class="mi">0</span><span class="o">;</span> <span class="n">i</span><span class="o">--)</span> <span class="o">{</span>
+    	<span class="n">heapify</span><span class="o">(</span><span class="n">elemente</span><span class="o">,</span> <span class="n">i</span><span class="o">,</span> <span class="n">n</span> <span class="o">-</span> <span class="mi">1</span><span class="o">);</span>
+    <span class="o">}</span>
+    <span class="cm">/*
     * Phase 2: Maximum aus der Teilhalde entnehmen und
     * Aufbau der sortierten Liste am Ende des Feldes
-    */
-    for (int i = n - 1; i &gt; 0; i--) {
-        vertausche(elemente, 0, i);
-        heapify(elemente, 0, i - 1);
-    }
-}
-```
-
-
-
-### Divide and Conquer
-
-#### Mergesort
-
-####
-
-|    best    |  average   |   worst    |
-| :--------: | :--------: | :--------: |
-| O(n log n) | O(n log n) | O(n log n) |
-
-```java
-private static void mergeSort(Comparable[] elemente, int low, int high) {
-    if (low &gt;= high) return;
-    int middle = (low + high) / 2;
-    mergeSort(elemente, low, middle);
-    mergeSort(elemente, middle + 1, high);
-    int p1 = low;			// durchläuft die linke Hälfte
-    int p2 = middle + 1;	// durchläuft die rechte Hälfte
-    int ende1 = middle; 	// letzter Index der linken Hälfte
-    int ende2 = high;		// letzter Index der rechten Hälfte
-
-    while ((p1 &lt;= ende1) &amp;&amp; (p2 &lt;= ende2)) {
-        if (elemente[p1].compareTo(elemente[p2]) &lt;= 0) {
-        	p1++;
-        } else {
-        // linke Hälfte muss verlagert werden
-            Comparable tmp = elemente[p2];
-            System.arraycopy(elemente, p1, elemente, p1 + 1, ende1 - p1 + 1);
-            elemente[p1] = tmp;
-            ende1++; p1++; p2++;
-        }
-    }
-}
-```
-
-
-
-#### Quicksort
-
-####
-
-|    best    |  average   | worst |
-| :--------: | :--------: | :---: |
-| O(n log n) | O(n log n) | O(n²) |
-
-```java
-public static void quickSort(int feld[]) {
-    quickSort(feld, 0, feld.length - 1);
-}
-
-private static void swap(int[] feld, int i, int j) {
-    int h = feld[i];
-    feld[i] = feld[j];
-    feld[j] = h;
-}
-
-private static void quickSort(int feld[], int links, int rechts) {
-    int l = links;
-    int r = rechts;
-    int pivot = feld[(links + rechts) / 2];
-    while (l &lt;= r) {
-        while (feld[l] &lt; pivot) l++;
-        while (feld[r] &gt; pivot) r--;
-        if (l &lt; r) {
-        	swap(feld, l, r);
-        }
-        if (l &lt;= r) { l++; r--; }
-    }
-    if (links &lt; r) quickSort(feld, links, r);
-    if (l &lt; rechts) quickSort(feld, l, rechts);
-}
-```
-
-Alternative
-
-```java
-private static void quickSort(int[] feld, int left, int right) {
-    if (left &gt;= right) {return; } // Basisfall
-    int pivot = feld[right];
-    int i = left;
-    for (int j = left; j &lt; right; j++) {
-        if (feld[j] &lt; pivot) {
-            swap(feld, i, j);
-            i++;
-        }
-    }
-    swap(feld, i, right);
-    quickSort(feld, left, i - 1);
-    quickSort(feld, i + 1, right);
-}
-```
-
-
-
-#### Bucketsort
-
-|  best  | average | worst  |
-| :----: | :-----: | :----: |
-| O(m+n) | O(m+n)  | O(m+n) |
-
-```java
-public static void bucketSort(Integer[] elemente, final int MAX_VALUE)
-throws Exception {
-    Integer[] buckets = new Integer[MAX_VALUE + 1];
-    for (Integer i : elemente) { // Elemente auf Buckets verteilen
-        int value = i.intValue();
-        if (value &gt; MAX_VALUE)
-        	throw new Exception("Entry␣too␣large:␣" + value + "␣&gt;␣" + MAX_VALUE);
-        if (buckets[value] != null)
-       		throw new Exception("Duplicate␣entry:␣" + value);
-        buckets[value] = i;
-    }
-    // Elemente der Reihe nach aus belegten Buckets entnehmen
-    for (int idx = 0; int i = 0; i &lt; buckets.length; i++) {
-        if (buckets[i] != null) {
-        	elemente[idx++] = buckets[i];
-        }
-    }
-}
-```
-
-
-
-#### Radixsort
-
-|  best  | average | worst  |
-| :----: | :-----: | :----: |
-| O(k*n) | O(k*n)  | O(k*n) |
-
-```java
-
-```
-
-
-
-Behälter buckets=n, z.B. 10(0-9) für Dezimahlzahlen
-
-Find digit len m (100: m=3)
-
-Sort LSB in Buckets
-
-Enroll
-
-Repeat for middle ...  
-
-
-
-Stabile Sortierverfahren
-
-Ein stabiles Sortierverfahren ist ein Algo der die Reihenfolge der Datensätze deren srtierschlüssel gleich sind bewart.
-
-Radix exchange sort
-
-
-
-
-
-
-
-## Graphen
-
-### Darstellungsformen
-
-- Adjazenzmatrix
-- Adjazenzliste
-- Kantenliste
-- Array
-
-
-
-### Traversierung
-
-Erst expandiert man den Graphen in einen Baum ausgehend vom Startknoten
-
-#### Tiefensuche (DFS)
-
-- Durchsuche Baum in pre-order Reihenfolge
-- Abbruch bei bereits besuchten Knoten
-- =&gt; daraus entsteht DFS Baum
-- Implementierung rekursiv, iterativ, mit Stack
-
-```java
-public void tiefensuche() {
-    setVisitedAllNodes(false);
-    Iterator<GraphNode> iterator = nodes.iterator();
-    while (iterator.hasNext()) {
-        GraphNode node = iterator.next();
-        if (!node.isVisited()) {
-        	dfs(node);
-        }
-    }
-}
-
-private void dfs(GraphNode node) {
-    node.setVisited(true);
-    System.out.println("visited␣node␣" + node.getId());
-    Iterator<GraphNode> iterator = node.getNeighbors(Direction.FORWARD);
-    while (iterator.hasNext()) {
-        GraphNode neighbor = iterator.next();
-        if (!neighbor.isVisited()) {
-        	dfs(neighbor);
-        }
-    }
-}
-```
-
-
-
-```java
-private void dfs_iterative(GraphNode node) {
-    Stack<GraphNode> stack = new Stack<GraphNode>();
-    stack.push(node);
-    while (!stack.isEmpty()) {
-        node = stack.top();
-        stack.pop();
-        if (!node.isVisited()) {
-            node.setVisited(true);
-            System.out.println("visited␣node␣" + node.getId());
-            Iterator<GraphNode> iterator = node.getNeighbors(Direction.
-            BACKWARD);
-            while (iterator.hasNext()) {
-                GraphNode neighbor = iterator.next();
-                if (!neighbor.isVisited()) {
-                    stack.push(neighbor);
-                }
-            }
-    	}
-	}
-}
-```
-
-Detektion von Zyklen:
-
-```java
-private void dfs(GraphNode node) {
-    node.setVisited(true);
-    node.setOnPath(true);
-    Iterator<GraphNode> iterator = node.getNeighbors(Direction.FORWARD);
-    while (iterator.hasNext()) {
-        GraphNode neighbor = iterator.next();
-        if (!neighbor.isVisited()) {
-        	dfs(neighbor);
-        }
-        if (neighbor.isOnPath()) {
-       		hasCycle = true;
-        }
-    }
-    node.setOnPath(false);
-}
-```
-
-
-
-#### Breitensuche (BFS)
-
-- Durchsuchen Baum ebenenweise (rechts-&gt;links)
-- Abbruch bei bereits besuchtem Knoten
-- Queue
-
-```java
-private void bfs(GraphNode node) {
-    Queue<GraphNode> queue = new Queue<GraphNode>();
-    queue.enqueue(node);
-    while (!queue.isEmpty()) {
-        node = queue.front();
-        queue.dequeue();
-        if (!node.isVisited()) {
-            node.setVisited(true);
-            System.out.println("visited␣node␣" + node.getId());
-            Iterator<GraphNode> iterator = node.getNeighbors(Direction.FORWARD);
-            while (iterator.hasNext()) {
-                GraphNode neighbor = iterator.next();
-                if (!neighbor.isVisited()) {
-                	queue.enqueue(neighbor);
-                }
-            }
-        }
-    }
-}
-```
-
-### Kürzester Pfad
-
-- Dijkstra
-
-  ![](aud/dijkstra.png)
-
-- Floyd
-
-  ![](aud/floyd.png)
-
-### Minimaler Spannbaum
-
-- Prim Algorithmus
-
-  - greedy algo
-
-  - immer alle benachbarten Knoten betrachten und Kante mit kleinstem Gewicht auswählen, falls diese noch nicht mit dem Spannbaum verbunden ist
-
-
-
-- Kruskal Algorithmus
-
-  ![](aud/kruskal.png)
-</GraphNode></GraphNode></GraphNode></GraphNode></GraphNode></GraphNode></GraphNode></GraphNode></GraphNode></center></center></center></center>
+    */</span>
+    <span class="k">for</span> <span class="o">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="n">n</span> <span class="o">-</span> <span class="mi">1</span><span class="o">;</span> <span class="n">i</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="o">;</span> <span class="n">i</span><span class="o">--)</span> <span class="o">{</span>
+        <span class="n">vertausche</span><span class="o">(</span><span class="n">elemente</span><span class="o">,</span> <span class="mi">0</span><span class="o">,</span> <span class="n">i</span><span class="o">);</span>
+        <span class="n">heapify</span><span class="o">(</span><span class="n">elemente</span><span class="o">,</span> <span class="mi">0</span><span class="o">,</span> <span class="n">i</span> <span class="o">-</span> <span class="mi">1</span><span class="o">);</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div></div>
+
+<h3 id="divide-and-conquer">Divide and Conquer</h3>
+
+<h4 id="mergesort">Mergesort</h4>
+
+<p>####</p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">best</th>
+      <th style="text-align: center">average</th>
+      <th style="text-align: center">worst</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center">O(n log n)</td>
+      <td style="text-align: center">O(n log n)</td>
+      <td style="text-align: center">O(n log n)</td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">private</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">mergeSort</span><span class="o">(</span><span class="n">Comparable</span><span class="o">[]</span> <span class="n">elemente</span><span class="o">,</span> <span class="kt">int</span> <span class="n">low</span><span class="o">,</span> <span class="kt">int</span> <span class="n">high</span><span class="o">)</span> <span class="o">{</span>
+    <span class="k">if</span> <span class="o">(</span><span class="n">low</span> <span class="o">&gt;=</span> <span class="n">high</span><span class="o">)</span> <span class="k">return</span><span class="o">;</span>
+    <span class="kt">int</span> <span class="n">middle</span> <span class="o">=</span> <span class="o">(</span><span class="n">low</span> <span class="o">+</span> <span class="n">high</span><span class="o">)</span> <span class="o">/</span> <span class="mi">2</span><span class="o">;</span>
+    <span class="n">mergeSort</span><span class="o">(</span><span class="n">elemente</span><span class="o">,</span> <span class="n">low</span><span class="o">,</span> <span class="n">middle</span><span class="o">);</span>
+    <span class="n">mergeSort</span><span class="o">(</span><span class="n">elemente</span><span class="o">,</span> <span class="n">middle</span> <span class="o">+</span> <span class="mi">1</span><span class="o">,</span> <span class="n">high</span><span class="o">);</span>
+    <span class="kt">int</span> <span class="n">p1</span> <span class="o">=</span> <span class="n">low</span><span class="o">;</span>			<span class="c1">// durchläuft die linke Hälfte</span>
+    <span class="kt">int</span> <span class="n">p2</span> <span class="o">=</span> <span class="n">middle</span> <span class="o">+</span> <span class="mi">1</span><span class="o">;</span>	<span class="c1">// durchläuft die rechte Hälfte</span>
+    <span class="kt">int</span> <span class="n">ende1</span> <span class="o">=</span> <span class="n">middle</span><span class="o">;</span> 	<span class="c1">// letzter Index der linken Hälfte</span>
+    <span class="kt">int</span> <span class="n">ende2</span> <span class="o">=</span> <span class="n">high</span><span class="o">;</span>		<span class="c1">// letzter Index der rechten Hälfte</span>
+
+    <span class="k">while</span> <span class="o">((</span><span class="n">p1</span> <span class="o">&lt;=</span> <span class="n">ende1</span><span class="o">)</span> <span class="o">&amp;&amp;</span> <span class="o">(</span><span class="n">p2</span> <span class="o">&lt;=</span> <span class="n">ende2</span><span class="o">))</span> <span class="o">{</span>
+        <span class="k">if</span> <span class="o">(</span><span class="n">elemente</span><span class="o">[</span><span class="n">p1</span><span class="o">].</span><span class="na">compareTo</span><span class="o">(</span><span class="n">elemente</span><span class="o">[</span><span class="n">p2</span><span class="o">])</span> <span class="o">&lt;=</span> <span class="mi">0</span><span class="o">)</span> <span class="o">{</span>
+        	<span class="n">p1</span><span class="o">++;</span>
+        <span class="o">}</span> <span class="k">else</span> <span class="o">{</span>
+        <span class="c1">// linke Hälfte muss verlagert werden</span>
+            <span class="n">Comparable</span> <span class="n">tmp</span> <span class="o">=</span> <span class="n">elemente</span><span class="o">[</span><span class="n">p2</span><span class="o">];</span>
+            <span class="n">System</span><span class="o">.</span><span class="na">arraycopy</span><span class="o">(</span><span class="n">elemente</span><span class="o">,</span> <span class="n">p1</span><span class="o">,</span> <span class="n">elemente</span><span class="o">,</span> <span class="n">p1</span> <span class="o">+</span> <span class="mi">1</span><span class="o">,</span> <span class="n">ende1</span> <span class="o">-</span> <span class="n">p1</span> <span class="o">+</span> <span class="mi">1</span><span class="o">);</span>
+            <span class="n">elemente</span><span class="o">[</span><span class="n">p1</span><span class="o">]</span> <span class="o">=</span> <span class="n">tmp</span><span class="o">;</span>
+            <span class="n">ende1</span><span class="o">++;</span> <span class="n">p1</span><span class="o">++;</span> <span class="n">p2</span><span class="o">++;</span>
+        <span class="o">}</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div></div>
+
+<h4 id="quicksort">Quicksort</h4>
+
+<p>####</p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">best</th>
+      <th style="text-align: center">average</th>
+      <th style="text-align: center">worst</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center">O(n log n)</td>
+      <td style="text-align: center">O(n log n)</td>
+      <td style="text-align: center">O(n²)</td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">quickSort</span><span class="o">(</span><span class="kt">int</span> <span class="n">feld</span><span class="o">[])</span> <span class="o">{</span>
+    <span class="n">quickSort</span><span class="o">(</span><span class="n">feld</span><span class="o">,</span> <span class="mi">0</span><span class="o">,</span> <span class="n">feld</span><span class="o">.</span><span class="na">length</span> <span class="o">-</span> <span class="mi">1</span><span class="o">);</span>
+<span class="o">}</span>
+
+<span class="kd">private</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">swap</span><span class="o">(</span><span class="kt">int</span><span class="o">[]</span> <span class="n">feld</span><span class="o">,</span> <span class="kt">int</span> <span class="n">i</span><span class="o">,</span> <span class="kt">int</span> <span class="n">j</span><span class="o">)</span> <span class="o">{</span>
+    <span class="kt">int</span> <span class="n">h</span> <span class="o">=</span> <span class="n">feld</span><span class="o">[</span><span class="n">i</span><span class="o">];</span>
+    <span class="n">feld</span><span class="o">[</span><span class="n">i</span><span class="o">]</span> <span class="o">=</span> <span class="n">feld</span><span class="o">[</span><span class="n">j</span><span class="o">];</span>
+    <span class="n">feld</span><span class="o">[</span><span class="n">j</span><span class="o">]</span> <span class="o">=</span> <span class="n">h</span><span class="o">;</span>
+<span class="o">}</span>
+
+<span class="kd">private</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">quickSort</span><span class="o">(</span><span class="kt">int</span> <span class="n">feld</span><span class="o">[],</span> <span class="kt">int</span> <span class="n">links</span><span class="o">,</span> <span class="kt">int</span> <span class="n">rechts</span><span class="o">)</span> <span class="o">{</span>
+    <span class="kt">int</span> <span class="n">l</span> <span class="o">=</span> <span class="n">links</span><span class="o">;</span>
+    <span class="kt">int</span> <span class="n">r</span> <span class="o">=</span> <span class="n">rechts</span><span class="o">;</span>
+    <span class="kt">int</span> <span class="n">pivot</span> <span class="o">=</span> <span class="n">feld</span><span class="o">[(</span><span class="n">links</span> <span class="o">+</span> <span class="n">rechts</span><span class="o">)</span> <span class="o">/</span> <span class="mi">2</span><span class="o">];</span>
+    <span class="k">while</span> <span class="o">(</span><span class="n">l</span> <span class="o">&lt;=</span> <span class="n">r</span><span class="o">)</span> <span class="o">{</span>
+        <span class="k">while</span> <span class="o">(</span><span class="n">feld</span><span class="o">[</span><span class="n">l</span><span class="o">]</span> <span class="o">&lt;</span> <span class="n">pivot</span><span class="o">)</span> <span class="n">l</span><span class="o">++;</span>
+        <span class="k">while</span> <span class="o">(</span><span class="n">feld</span><span class="o">[</span><span class="n">r</span><span class="o">]</span> <span class="o">&gt;</span> <span class="n">pivot</span><span class="o">)</span> <span class="n">r</span><span class="o">--;</span>
+        <span class="k">if</span> <span class="o">(</span><span class="n">l</span> <span class="o">&lt;</span> <span class="n">r</span><span class="o">)</span> <span class="o">{</span>
+        	<span class="n">swap</span><span class="o">(</span><span class="n">feld</span><span class="o">,</span> <span class="n">l</span><span class="o">,</span> <span class="n">r</span><span class="o">);</span>
+        <span class="o">}</span>
+        <span class="k">if</span> <span class="o">(</span><span class="n">l</span> <span class="o">&lt;=</span> <span class="n">r</span><span class="o">)</span> <span class="o">{</span> <span class="n">l</span><span class="o">++;</span> <span class="n">r</span><span class="o">--;</span> <span class="o">}</span>
+    <span class="o">}</span>
+    <span class="k">if</span> <span class="o">(</span><span class="n">links</span> <span class="o">&lt;</span> <span class="n">r</span><span class="o">)</span> <span class="n">quickSort</span><span class="o">(</span><span class="n">feld</span><span class="o">,</span> <span class="n">links</span><span class="o">,</span> <span class="n">r</span><span class="o">);</span>
+    <span class="k">if</span> <span class="o">(</span><span class="n">l</span> <span class="o">&lt;</span> <span class="n">rechts</span><span class="o">)</span> <span class="n">quickSort</span><span class="o">(</span><span class="n">feld</span><span class="o">,</span> <span class="n">l</span><span class="o">,</span> <span class="n">rechts</span><span class="o">);</span>
+<span class="o">}</span>
+</code></pre></div></div>
+
+<p>Alternative</p>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">private</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">quickSort</span><span class="o">(</span><span class="kt">int</span><span class="o">[]</span> <span class="n">feld</span><span class="o">,</span> <span class="kt">int</span> <span class="n">left</span><span class="o">,</span> <span class="kt">int</span> <span class="n">right</span><span class="o">)</span> <span class="o">{</span>
+    <span class="k">if</span> <span class="o">(</span><span class="n">left</span> <span class="o">&gt;=</span> <span class="n">right</span><span class="o">)</span> <span class="o">{</span><span class="k">return</span><span class="o">;</span> <span class="o">}</span> <span class="c1">// Basisfall</span>
+    <span class="kt">int</span> <span class="n">pivot</span> <span class="o">=</span> <span class="n">feld</span><span class="o">[</span><span class="n">right</span><span class="o">];</span>
+    <span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="n">left</span><span class="o">;</span>
+    <span class="k">for</span> <span class="o">(</span><span class="kt">int</span> <span class="n">j</span> <span class="o">=</span> <span class="n">left</span><span class="o">;</span> <span class="n">j</span> <span class="o">&lt;</span> <span class="n">right</span><span class="o">;</span> <span class="n">j</span><span class="o">++)</span> <span class="o">{</span>
+        <span class="k">if</span> <span class="o">(</span><span class="n">feld</span><span class="o">[</span><span class="n">j</span><span class="o">]</span> <span class="o">&lt;</span> <span class="n">pivot</span><span class="o">)</span> <span class="o">{</span>
+            <span class="n">swap</span><span class="o">(</span><span class="n">feld</span><span class="o">,</span> <span class="n">i</span><span class="o">,</span> <span class="n">j</span><span class="o">);</span>
+            <span class="n">i</span><span class="o">++;</span>
+        <span class="o">}</span>
+    <span class="o">}</span>
+    <span class="n">swap</span><span class="o">(</span><span class="n">feld</span><span class="o">,</span> <span class="n">i</span><span class="o">,</span> <span class="n">right</span><span class="o">);</span>
+    <span class="n">quickSort</span><span class="o">(</span><span class="n">feld</span><span class="o">,</span> <span class="n">left</span><span class="o">,</span> <span class="n">i</span> <span class="o">-</span> <span class="mi">1</span><span class="o">);</span>
+    <span class="n">quickSort</span><span class="o">(</span><span class="n">feld</span><span class="o">,</span> <span class="n">i</span> <span class="o">+</span> <span class="mi">1</span><span class="o">,</span> <span class="n">right</span><span class="o">);</span>
+<span class="o">}</span>
+</code></pre></div></div>
+
+<h4 id="bucketsort">Bucketsort</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">best</th>
+      <th style="text-align: center">average</th>
+      <th style="text-align: center">worst</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center">O(m+n)</td>
+      <td style="text-align: center">O(m+n)</td>
+      <td style="text-align: center">O(m+n)</td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">bucketSort</span><span class="o">(</span><span class="n">Integer</span><span class="o">[]</span> <span class="n">elemente</span><span class="o">,</span> <span class="kd">final</span> <span class="kt">int</span> <span class="n">MAX_VALUE</span><span class="o">)</span>
+<span class="kd">throws</span> <span class="n">Exception</span> <span class="o">{</span>
+    <span class="n">Integer</span><span class="o">[]</span> <span class="n">buckets</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Integer</span><span class="o">[</span><span class="n">MAX_VALUE</span> <span class="o">+</span> <span class="mi">1</span><span class="o">];</span>
+    <span class="k">for</span> <span class="o">(</span><span class="n">Integer</span> <span class="n">i</span> <span class="o">:</span> <span class="n">elemente</span><span class="o">)</span> <span class="o">{</span> <span class="c1">// Elemente auf Buckets verteilen</span>
+        <span class="kt">int</span> <span class="n">value</span> <span class="o">=</span> <span class="n">i</span><span class="o">.</span><span class="na">intValue</span><span class="o">();</span>
+        <span class="k">if</span> <span class="o">(</span><span class="n">value</span> <span class="o">&gt;</span> <span class="n">MAX_VALUE</span><span class="o">)</span>
+        	<span class="k">throw</span> <span class="k">new</span> <span class="nf">Exception</span><span class="o">(</span><span class="s">"Entry␣too␣large:␣"</span> <span class="o">+</span> <span class="n">value</span> <span class="o">+</span> <span class="s">"␣&gt;␣"</span> <span class="o">+</span> <span class="n">MAX_VALUE</span><span class="o">);</span>
+        <span class="k">if</span> <span class="o">(</span><span class="n">buckets</span><span class="o">[</span><span class="n">value</span><span class="o">]</span> <span class="o">!=</span> <span class="kc">null</span><span class="o">)</span>
+       		<span class="k">throw</span> <span class="k">new</span> <span class="nf">Exception</span><span class="o">(</span><span class="s">"Duplicate␣entry:␣"</span> <span class="o">+</span> <span class="n">value</span><span class="o">);</span>
+        <span class="n">buckets</span><span class="o">[</span><span class="n">value</span><span class="o">]</span> <span class="o">=</span> <span class="n">i</span><span class="o">;</span>
+    <span class="o">}</span>
+    <span class="c1">// Elemente der Reihe nach aus belegten Buckets entnehmen</span>
+    <span class="k">for</span> <span class="o">(</span><span class="kt">int</span> <span class="n">idx</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span> <span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">buckets</span><span class="o">.</span><span class="na">length</span><span class="o">;</span> <span class="n">i</span><span class="o">++)</span> <span class="o">{</span>
+        <span class="k">if</span> <span class="o">(</span><span class="n">buckets</span><span class="o">[</span><span class="n">i</span><span class="o">]</span> <span class="o">!=</span> <span class="kc">null</span><span class="o">)</span> <span class="o">{</span>
+        	<span class="n">elemente</span><span class="o">[</span><span class="n">idx</span><span class="o">++]</span> <span class="o">=</span> <span class="n">buckets</span><span class="o">[</span><span class="n">i</span><span class="o">];</span>
+        <span class="o">}</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div></div>
+
+<h4 id="radixsort">Radixsort</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">best</th>
+      <th style="text-align: center">average</th>
+      <th style="text-align: center">worst</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center">O(k*n)</td>
+      <td style="text-align: center">O(k*n)</td>
+      <td style="text-align: center">O(k*n)</td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+</code></pre></div></div>
+
+<p>Behälter buckets=n, z.B. 10(0-9) für Dezimahlzahlen</p>
+
+<p>Find digit len m (100: m=3)</p>
+
+<p>Sort LSB in Buckets</p>
+
+<p>Enroll</p>
+
+<p>Repeat for middle …</p>
+
+<p>Stabile Sortierverfahren</p>
+
+<p>Ein stabiles Sortierverfahren ist ein Algo der die Reihenfolge der Datensätze deren srtierschlüssel gleich sind bewart.</p>
+
+<p>Radix exchange sort</p>
+
+<h2 id="graphen">Graphen</h2>
+
+<h3 id="darstellungsformen">Darstellungsformen</h3>
+
+<ul>
+  <li>Adjazenzmatrix</li>
+  <li>Adjazenzliste</li>
+  <li>Kantenliste</li>
+  <li>Array</li>
+</ul>
+
+<h3 id="traversierung">Traversierung</h3>
+
+<p>Erst expandiert man den Graphen in einen Baum ausgehend vom Startknoten</p>
+
+<h4 id="tiefensuche-dfs">Tiefensuche (DFS)</h4>
+
+<ul>
+  <li>Durchsuche Baum in pre-order Reihenfolge</li>
+  <li>Abbruch bei bereits besuchten Knoten</li>
+  <li>=&gt; daraus entsteht DFS Baum</li>
+  <li>Implementierung rekursiv, iterativ, mit Stack</li>
+</ul>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">public</span> <span class="kt">void</span> <span class="nf">tiefensuche</span><span class="o">()</span> <span class="o">{</span>
+    <span class="n">setVisitedAllNodes</span><span class="o">(</span><span class="kc">false</span><span class="o">);</span>
+    <span class="n">Iterator</span><span class="o">&lt;</span><span class="n">GraphNode</span><span class="o">&gt;</span> <span class="n">iterator</span> <span class="o">=</span> <span class="n">nodes</span><span class="o">.</span><span class="na">iterator</span><span class="o">();</span>
+    <span class="k">while</span> <span class="o">(</span><span class="n">iterator</span><span class="o">.</span><span class="na">hasNext</span><span class="o">())</span> <span class="o">{</span>
+        <span class="n">GraphNode</span> <span class="n">node</span> <span class="o">=</span> <span class="n">iterator</span><span class="o">.</span><span class="na">next</span><span class="o">();</span>
+        <span class="k">if</span> <span class="o">(!</span><span class="n">node</span><span class="o">.</span><span class="na">isVisited</span><span class="o">())</span> <span class="o">{</span>
+        	<span class="n">dfs</span><span class="o">(</span><span class="n">node</span><span class="o">);</span>
+        <span class="o">}</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+
+<span class="kd">private</span> <span class="kt">void</span> <span class="nf">dfs</span><span class="o">(</span><span class="n">GraphNode</span> <span class="n">node</span><span class="o">)</span> <span class="o">{</span>
+    <span class="n">node</span><span class="o">.</span><span class="na">setVisited</span><span class="o">(</span><span class="kc">true</span><span class="o">);</span>
+    <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"visited␣node␣"</span> <span class="o">+</span> <span class="n">node</span><span class="o">.</span><span class="na">getId</span><span class="o">());</span>
+    <span class="n">Iterator</span><span class="o">&lt;</span><span class="n">GraphNode</span><span class="o">&gt;</span> <span class="n">iterator</span> <span class="o">=</span> <span class="n">node</span><span class="o">.</span><span class="na">getNeighbors</span><span class="o">(</span><span class="n">Direction</span><span class="o">.</span><span class="na">FORWARD</span><span class="o">);</span>
+    <span class="k">while</span> <span class="o">(</span><span class="n">iterator</span><span class="o">.</span><span class="na">hasNext</span><span class="o">())</span> <span class="o">{</span>
+        <span class="n">GraphNode</span> <span class="n">neighbor</span> <span class="o">=</span> <span class="n">iterator</span><span class="o">.</span><span class="na">next</span><span class="o">();</span>
+        <span class="k">if</span> <span class="o">(!</span><span class="n">neighbor</span><span class="o">.</span><span class="na">isVisited</span><span class="o">())</span> <span class="o">{</span>
+        	<span class="n">dfs</span><span class="o">(</span><span class="n">neighbor</span><span class="o">);</span>
+        <span class="o">}</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div></div>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">private</span> <span class="kt">void</span> <span class="nf">dfs_iterative</span><span class="o">(</span><span class="n">GraphNode</span> <span class="n">node</span><span class="o">)</span> <span class="o">{</span>
+    <span class="n">Stack</span><span class="o">&lt;</span><span class="n">GraphNode</span><span class="o">&gt;</span> <span class="n">stack</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Stack</span><span class="o">&lt;</span><span class="n">GraphNode</span><span class="o">&gt;();</span>
+    <span class="n">stack</span><span class="o">.</span><span class="na">push</span><span class="o">(</span><span class="n">node</span><span class="o">);</span>
+    <span class="k">while</span> <span class="o">(!</span><span class="n">stack</span><span class="o">.</span><span class="na">isEmpty</span><span class="o">())</span> <span class="o">{</span>
+        <span class="n">node</span> <span class="o">=</span> <span class="n">stack</span><span class="o">.</span><span class="na">top</span><span class="o">();</span>
+        <span class="n">stack</span><span class="o">.</span><span class="na">pop</span><span class="o">();</span>
+        <span class="k">if</span> <span class="o">(!</span><span class="n">node</span><span class="o">.</span><span class="na">isVisited</span><span class="o">())</span> <span class="o">{</span>
+            <span class="n">node</span><span class="o">.</span><span class="na">setVisited</span><span class="o">(</span><span class="kc">true</span><span class="o">);</span>
+            <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"visited␣node␣"</span> <span class="o">+</span> <span class="n">node</span><span class="o">.</span><span class="na">getId</span><span class="o">());</span>
+            <span class="n">Iterator</span><span class="o">&lt;</span><span class="n">GraphNode</span><span class="o">&gt;</span> <span class="n">iterator</span> <span class="o">=</span> <span class="n">node</span><span class="o">.</span><span class="na">getNeighbors</span><span class="o">(</span><span class="n">Direction</span><span class="o">.</span>
+            <span class="n">BACKWARD</span><span class="o">);</span>
+            <span class="k">while</span> <span class="o">(</span><span class="n">iterator</span><span class="o">.</span><span class="na">hasNext</span><span class="o">())</span> <span class="o">{</span>
+                <span class="n">GraphNode</span> <span class="n">neighbor</span> <span class="o">=</span> <span class="n">iterator</span><span class="o">.</span><span class="na">next</span><span class="o">();</span>
+                <span class="k">if</span> <span class="o">(!</span><span class="n">neighbor</span><span class="o">.</span><span class="na">isVisited</span><span class="o">())</span> <span class="o">{</span>
+                    <span class="n">stack</span><span class="o">.</span><span class="na">push</span><span class="o">(</span><span class="n">neighbor</span><span class="o">);</span>
+                <span class="o">}</span>
+            <span class="o">}</span>
+    	<span class="o">}</span>
+	<span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div></div>
+
+<p>Detektion von Zyklen:</p>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">private</span> <span class="kt">void</span> <span class="nf">dfs</span><span class="o">(</span><span class="n">GraphNode</span> <span class="n">node</span><span class="o">)</span> <span class="o">{</span>
+    <span class="n">node</span><span class="o">.</span><span class="na">setVisited</span><span class="o">(</span><span class="kc">true</span><span class="o">);</span>
+    <span class="n">node</span><span class="o">.</span><span class="na">setOnPath</span><span class="o">(</span><span class="kc">true</span><span class="o">);</span>
+    <span class="n">Iterator</span><span class="o">&lt;</span><span class="n">GraphNode</span><span class="o">&gt;</span> <span class="n">iterator</span> <span class="o">=</span> <span class="n">node</span><span class="o">.</span><span class="na">getNeighbors</span><span class="o">(</span><span class="n">Direction</span><span class="o">.</span><span class="na">FORWARD</span><span class="o">);</span>
+    <span class="k">while</span> <span class="o">(</span><span class="n">iterator</span><span class="o">.</span><span class="na">hasNext</span><span class="o">())</span> <span class="o">{</span>
+        <span class="n">GraphNode</span> <span class="n">neighbor</span> <span class="o">=</span> <span class="n">iterator</span><span class="o">.</span><span class="na">next</span><span class="o">();</span>
+        <span class="k">if</span> <span class="o">(!</span><span class="n">neighbor</span><span class="o">.</span><span class="na">isVisited</span><span class="o">())</span> <span class="o">{</span>
+        	<span class="n">dfs</span><span class="o">(</span><span class="n">neighbor</span><span class="o">);</span>
+        <span class="o">}</span>
+        <span class="k">if</span> <span class="o">(</span><span class="n">neighbor</span><span class="o">.</span><span class="na">isOnPath</span><span class="o">())</span> <span class="o">{</span>
+       		<span class="n">hasCycle</span> <span class="o">=</span> <span class="kc">true</span><span class="o">;</span>
+        <span class="o">}</span>
+    <span class="o">}</span>
+    <span class="n">node</span><span class="o">.</span><span class="na">setOnPath</span><span class="o">(</span><span class="kc">false</span><span class="o">);</span>
+<span class="o">}</span>
+</code></pre></div></div>
+
+<h4 id="breitensuche-bfs">Breitensuche (BFS)</h4>
+
+<ul>
+  <li>Durchsuchen Baum ebenenweise (rechts-&gt;links)</li>
+  <li>Abbruch bei bereits besuchtem Knoten</li>
+  <li>Queue</li>
+</ul>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">private</span> <span class="kt">void</span> <span class="nf">bfs</span><span class="o">(</span><span class="n">GraphNode</span> <span class="n">node</span><span class="o">)</span> <span class="o">{</span>
+    <span class="n">Queue</span><span class="o">&lt;</span><span class="n">GraphNode</span><span class="o">&gt;</span> <span class="n">queue</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Queue</span><span class="o">&lt;</span><span class="n">GraphNode</span><span class="o">&gt;();</span>
+    <span class="n">queue</span><span class="o">.</span><span class="na">enqueue</span><span class="o">(</span><span class="n">node</span><span class="o">);</span>
+    <span class="k">while</span> <span class="o">(!</span><span class="n">queue</span><span class="o">.</span><span class="na">isEmpty</span><span class="o">())</span> <span class="o">{</span>
+        <span class="n">node</span> <span class="o">=</span> <span class="n">queue</span><span class="o">.</span><span class="na">front</span><span class="o">();</span>
+        <span class="n">queue</span><span class="o">.</span><span class="na">dequeue</span><span class="o">();</span>
+        <span class="k">if</span> <span class="o">(!</span><span class="n">node</span><span class="o">.</span><span class="na">isVisited</span><span class="o">())</span> <span class="o">{</span>
+            <span class="n">node</span><span class="o">.</span><span class="na">setVisited</span><span class="o">(</span><span class="kc">true</span><span class="o">);</span>
+            <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"visited␣node␣"</span> <span class="o">+</span> <span class="n">node</span><span class="o">.</span><span class="na">getId</span><span class="o">());</span>
+            <span class="n">Iterator</span><span class="o">&lt;</span><span class="n">GraphNode</span><span class="o">&gt;</span> <span class="n">iterator</span> <span class="o">=</span> <span class="n">node</span><span class="o">.</span><span class="na">getNeighbors</span><span class="o">(</span><span class="n">Direction</span><span class="o">.</span><span class="na">FORWARD</span><span class="o">);</span>
+            <span class="k">while</span> <span class="o">(</span><span class="n">iterator</span><span class="o">.</span><span class="na">hasNext</span><span class="o">())</span> <span class="o">{</span>
+                <span class="n">GraphNode</span> <span class="n">neighbor</span> <span class="o">=</span> <span class="n">iterator</span><span class="o">.</span><span class="na">next</span><span class="o">();</span>
+                <span class="k">if</span> <span class="o">(!</span><span class="n">neighbor</span><span class="o">.</span><span class="na">isVisited</span><span class="o">())</span> <span class="o">{</span>
+                	<span class="n">queue</span><span class="o">.</span><span class="na">enqueue</span><span class="o">(</span><span class="n">neighbor</span><span class="o">);</span>
+                <span class="o">}</span>
+            <span class="o">}</span>
+        <span class="o">}</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div></div>
+
+<h3 id="kürzester-pfad">Kürzester Pfad</h3>
+
+<ul>
+  <li>
+    <p>Dijkstra</p>
+
+    <p><img src="aud/dijkstra.png" alt="" /></p>
+  </li>
+  <li>
+    <p>Floyd</p>
+
+    <p><img src="aud/floyd.png" alt="" /></p>
+  </li>
+</ul>
+
+<h3 id="minimaler-spannbaum">Minimaler Spannbaum</h3>
+
+<ul>
+  <li>
+    <p>Prim Algorithmus</p>
+
+    <ul>
+      <li>
+        <p>greedy algo</p>
+      </li>
+      <li>
+        <p>immer alle benachbarten Knoten betrachten und Kante mit kleinstem Gewicht auswählen, falls diese noch nicht mit dem Spannbaum verbunden ist</p>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <p>Kruskal Algorithmus</p>
+
+    <p><img src="aud/kruskal.png" alt="" /></p>
+  </li>
+</ul>
 </p>
         
         
