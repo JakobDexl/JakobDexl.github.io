@@ -1,4 +1,7 @@
 <!-- Wrapper -->
+{% if jekyll.environment == 'production' %}
+{% include analytics.html %}
+{% endif %}
 <div id="wrapper">
 
 <!-- Header -->
