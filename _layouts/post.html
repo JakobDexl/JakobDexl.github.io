@@ -68,6 +68,7 @@ body {
   <a href="#">Contact</a>
 </div> -->
 <!-- Main -->
+
 <div class="markdown">
 <!-- <link rel="stylesheet" href="https://jakobdexl.github.io/assets/css/dark_solar.css" > -->
 <!-- One -->
@@ -77,7 +78,7 @@ body {
 			<h1>{{ page.title }}</h1>
 		</header> -->
 	  <!-- {% if page.image %}<span class="image main"><img src="{{ site.baseurl }}/{{ page.image }}" alt="" /></span>{% endif %} -->
-		<p>{{ content }}</p>
+		<p>{{content | markdownify}}</p>
 	</div>
 <!-- </section> -->
 

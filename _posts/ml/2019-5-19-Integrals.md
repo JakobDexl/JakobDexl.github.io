@@ -5,6 +5,15 @@ categories: dl
 description: Feugiat amet tempus
 image: assets/images/pic06.jpg
 ---
+<script src="/assets/js/p5/p5.min.js"></script>
+<script src="/assets/js/p5/addons/p5.dom.min.js"></script>
+
+
+<div class="inner">
+<span><script  src="/assets/js/animations/fourier_series.js"></script></span>
+</div>
+
+
 
 ## Integrals
 
@@ -12,9 +21,11 @@ image: assets/images/pic06.jpg
 
 projezierbarkeit x, y
 
+<script type="text/javascript" src="/assets/js/animations/fourier_series.js"></script>
+
 #### 3D Integrals
 
-$G\subseteq \Bbb{R^3}$
+$$G\subseteq \Bbb{R^3}$$
 
 projezierbarkeit x, y
 
@@ -104,11 +115,10 @@ regulärer Bereich, Oberfläche S, Parameterdarstellung so gewählt (+-n) dass n
 
 
 
-​						Volumen $\lrarr ​$ Oberfläche
+​						Volumen $$\lrarr ​$$ Oberfläche
 
-​			Quelldichte im Körper $\lrarr $ Fluss des Vektorfeldes durch Oberfläche
+​			Quelldichte im Körper $$\lrarr $$ Fluss des Vektorfeldes durch Oberfläche
 $$
-￼
 \int\limits_G div(\vec V ) \, dV=\int\limits_S (\vec{V} \circ \vec{n})\, dS
 $$
 
@@ -124,7 +134,7 @@ gilt für stückweise glatte, zweiseitige fläche mit geschlossener randkurve oh
 
 Dabei ist dierandkurve im uhrzeiger sinn fest gelegt--- fläche S muss beim durchlaufen links liegen.
 
-​						Fläche $\lrarr $ Kurve (Rand)
+​						Fläche $$\lrarr $$ Kurve (Rand)
 $$
 \int\limits_S rot(\vec{V}) \circ \vec{n} \, dS = \oint\limits_{\partial{S}} \vec V  \, \vec{dK}
 $$
@@ -141,27 +151,27 @@ $$
 
 $$ z=x+jy ​$$
 
-$f(z)=f(x+jy)=\Re\{f(z)\}+\Im\{f(z)\} = u(x,y) + jv(x,y)$
+$$f(z)=f(x+jy)=\Re\{f(z)\}+\Im\{f(z)\} = u(x,y) + jv(x,y)$$
 
-$z=rcos\varphi+jrsin\varphi = re^{j\varphi}$
+$$z=rcos\varphi+jrsin\varphi = re^{j\varphi}$$
 
 *examples:*
 
-$z* \overline z = (x+jy)(x-jy) = x^2+y^2​$
+$$z* \overline z = (x+jy)(x-jy) = x^2+y^2​$$
 
-$(z²+1)=(z-i)(z+i)$
+$$(z²+1)=(z-i)(z+i)$$
 
-$(z²-1) = (z-1)(z+1)$
+$$(z²-1) = (z-1)(z+1)$$
 
 ###### Limits and differentiation in $\Bbb{C}$
 
 A complex function f is ***holomorphic***, regular or analytical if,
 
-1) a point $z_0 \in D(f)​$ exists on an open set $\mathcal{O}​$ so that $z_0 \in \mathcal{O}\subseteq D(f)​$ is valid and $f​$ is differentiable in every point of $\mathcal{O}​$.
+1) a point $$z_0 \in D(f)​$$ exists on an open set $$\mathcal{O}​$$ so that $$z_0 \in \mathcal{O}\subseteq D(f)​$$ is valid and $$f​$$ is differentiable in every point of $$\mathcal{O}​$$.
 
 2)  ...
 
-3) it is expressed as a polynomial of the form $f(z) = z^n​$ or a power series of the form $f(z)=\sum_{n=0}^{\infty}c_n z^n​$
+3) it is expressed as a polynomial of the form $$f(z) = z^n​$$ or a power series of the form $$f(z)=\sum_{n=0}^{\infty}c_n z^n​$$
 $$
 f^{'}=\lim_{z\to z_0} \frac{f(z)-f(z_0)}{z-z_0}
 $$
@@ -187,7 +197,8 @@ $$
 
 ###### Residuals
 
-Singularities sind die komplexen Nullstellen des Nenners bei gebrochen rationalen Funktionen e.g. $\frac{1}{(z-j)(z+j)}​$ with $z_0 = j; z_1=-j​$ as singularities.
+Singularities sind die komplexen Nullstellen des Nenners bei gebrochen rationalen Funktionen e.g. $$\frac{1}{(z-j)(z+j)}​$$ with $$z_0 = j; z_1=-j​$$ as singularities.
+
 $$
 f(z)= \lim_{z\to z_0}(z-z_0)f(z)
 $$
@@ -196,6 +207,7 @@ $$
 ###### Resiudal sentence
 
 Residuensatz mit Bedingungen stückweise glatte geschlossene doppelpunktfreie Kurve, sodass alle Singularitäten im inneren liegen. Der Drehsinn ist hierbei so zu wählen das das Innere links der Kurve liegt.
+
 $$
 \ointctrclockwise\limits_K{f(z)}\,dz = 2\pi j \sum_{i=1}^{n}Res_{z=z_i} f(z)
 $$
