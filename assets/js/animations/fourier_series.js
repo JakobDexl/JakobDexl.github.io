@@ -10,8 +10,8 @@ let wave = [];
 let slider;
 
 function setup() {
-  createCanvas(600, 400);
-  //canvas.parent('sketch-holder'); // this ensures that the sketch will be positioned properly
+  var canvas  = createCanvas(600, 400);
+  canvas.parent('container'); // this ensures that the sketch will be positioned properly
 
   //slider = createSlider(1, 10, 5);
 }
