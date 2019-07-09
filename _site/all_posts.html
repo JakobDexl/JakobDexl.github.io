@@ -111,18 +111,11 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
 
 <script src="/assets/js/p5/addons/p5.dom.min.js"></script>
 
+<h1 id="fourier-series">Fourier Series</h1>
+
 <body>
   <div id="container"></div>
   <script type="text/javascript" src="/assets/js/animations/fourier_series.js"></script>
-  <!-- <script>
-  let sketch = function(p) {
-    p.setup = function(){
-      p.createCanvas(100, 100);
-      p.background(0);
-    }
-  };
-  new p5(sketch, 'container');
-  </script> -->
 </body>
 
 <h2 id="integrals">Integrals</h2>
@@ -186,7 +179,11 @@ T_z = \frac{1}{M}\iiint\limits_G (x 2 + y 2 )ρ(x, y, z)d(x, y, z)</script></p>
 <script type="math/tex">H = \{(r,\varphi)\in\Bbb{R}²|1\leq{r}\leq 2,0\leq \varphi \leq \pi\}</script></p>
 
 <script type="math/tex; mode=display">% <![CDATA[
-det\biggl(\frac{\partial(x,y)}{\partial(r,\varphi)}\biggr) = \biggl(\begin{matrix}cos\varphi & -rsin\varphi\\sin\varphi & rcos\varphi\end{matrix}\biggr) =rcos²\varphi+rsin²\varphi=r %]]></script>
+\begin{align}
+det\biggl(\frac{\partial(x,y)}{\partial(r,\varphi)}\biggr) 
+& = \biggl(\begin{matrix}cos\varphi & -rsin\varphi\\sin\varphi & rcos\varphi\end{matrix}\biggr) \\
+& =rcos²\varphi+rsin²\varphi=r
+\end{align} %]]></script>
 
 <h4 id="curve-integrals">Curve Integrals</h4>
 

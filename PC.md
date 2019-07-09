@@ -1,7 +1,7 @@
 ---
 layout: allpostsbycategory
-title: PC
-landing-title: 'PC'
+title: Computer
+landing-title: 'Computer'
 categories: pc
 description: Linux, networking and co.
 nav-menu: true

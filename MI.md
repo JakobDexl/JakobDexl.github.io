@@ -10,7 +10,7 @@ type: menu
 description: Explanations of the most common imaging modalities in medicine
 image: assets/images/harlie-raethel.jpg
 author: null
-show_tile: true
+show_tile: false
 ---
 
 <h1>All posts</h1>

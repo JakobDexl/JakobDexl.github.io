@@ -8,19 +8,11 @@ image: assets/images/pic06.jpg
 <script src="/assets/js/p5/p5.min.js"></script>
 <script src="/assets/js/p5/addons/p5.dom.min.js"></script>
 
+# Fourier Series
 
 <body>
   <div id='container'></div>
   <script type="text/javascript" src="/assets/js/animations/fourier_series.js"></script>
-  <!-- <script>
-  let sketch = function(p) {
-    p.setup = function(){
-      p.createCanvas(100, 100);
-      p.background(0);
-    }
-  };
-  new p5(sketch, 'container');
-  </script> -->
 </body>
 
 ## Integrals
@@ -87,7 +79,11 @@ H = \{(r,\varphi)\in\Bbb{R}²|1\leq{r}\leq 2,0\leq \varphi \leq \pi\}
 $$
 
 $$
-det\biggl(\frac{\partial(x,y)}{\partial(r,\varphi)}\biggr) = \biggl(\begin{matrix}cos\varphi & -rsin\varphi\\sin\varphi & rcos\varphi\end{matrix}\biggr) =rcos²\varphi+rsin²\varphi=r
+\begin{align}
+det\biggl(\frac{\partial(x,y)}{\partial(r,\varphi)}\biggr) 
+& = \biggl(\begin{matrix}cos\varphi & -rsin\varphi\\sin\varphi & rcos\varphi\end{matrix}\biggr) \\
+& =rcos²\varphi+rsin²\varphi=r
+\end{align}
 $$
 
 
