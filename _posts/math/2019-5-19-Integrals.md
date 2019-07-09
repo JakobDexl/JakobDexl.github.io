@@ -1,9 +1,9 @@
 ---
 layout: post
 title: test math2
-categories: dl
+categories: ma
 description: Feugiat amet tempus
-image: assets/images/pic06.jpg
+image: assets/images/joel-filipe.jpg
 ---
 <script src="/assets/js/p5/p5.min.js"></script>
 <script src="/assets/js/p5/addons/p5.dom.min.js"></script>
@@ -11,8 +11,10 @@ image: assets/images/pic06.jpg
 # Fourier Series
 
 <body>
-  <div id='container'></div>
+
+  <div id='container' class="center"></div>
   <script type="text/javascript" src="/assets/js/animations/fourier_series.js"></script>
+
 </body>
 
 ## Integrals
@@ -80,7 +82,7 @@ $$
 
 $$
 \begin{align}
-det\biggl(\frac{\partial(x,y)}{\partial(r,\varphi)}\biggr) 
+det\biggl(\frac{\partial(x,y)}{\partial(r,\varphi)}\biggr)
 & = \biggl(\begin{matrix}cos\varphi & -rsin\varphi\\sin\varphi & rcos\varphi\end{matrix}\biggr) \\
 & =rcos²\varphi+rsin²\varphi=r
 \end{align}

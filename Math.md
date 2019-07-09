@@ -1,7 +1,7 @@
 ---
 layout: allpostsbycategory
-title: Math
-landing-title: 'Math'
+title: Mathematics
+landing-title: 'Mathematics'
 
 categories: ma
 

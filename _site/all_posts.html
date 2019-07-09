@@ -68,11 +68,11 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
 		    
 		
 		    
-		        <li><a href="http://localhost:4000/Math.html">Math</a></li>
+		        <li><a href="http://localhost:4000/Math.html">Mathematics</a></li>
 		    
 		
 		    
-		        <li><a href="http://localhost:4000/PC.html">PC</a></li>
+		        <li><a href="http://localhost:4000/PC.html">Computer</a></li>
 		    
 		
 		    
@@ -103,9 +103,190 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
         
         
         <header class="major">
+          <h1>Useful tools</h1>
+        </header>
+        <span class="image main"><img src="/assets/images/radek-grzybowski.jpg" alt="" /></span>
+        <p>2019-07-09 00:00:00 +0200</p>
+        <p><h1 id="useful-tools">Useful Tools</h1>
+
+<h2 id="typora">Typora</h2>
+
+<p>Slim line markdown editor with live preview. Supports images, headers, lists, mathematics, code fences, tables, diagrams, inline styles, etc.</p>
+
+<p><strong>How to install on Debian/Ubuntu</strong></p>
+
+<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp"># or use
+# sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys BA300B7755AFCFAE
+</span><span class="n">wget</span> <span class="o">-</span><span class="n">qO</span> <span class="o">-</span> <span class="n">https</span><span class="o">:</span><span class="c1">//typora.io/linux/public-key.asc | sudo apt-key add -</span>
+
+<span class="cp"># add Typora's repository
+</span><span class="n">sudo</span> <span class="n">add</span><span class="o">-</span><span class="n">apt</span><span class="o">-</span><span class="n">repository</span> <span class="err">'</span><span class="n">deb</span> <span class="n">https</span><span class="o">:</span><span class="c1">//typora.io/linux ./'</span>
+<span class="n">sudo</span> <span class="n">apt</span><span class="o">-</span><span class="n">get</span> <span class="n">update</span>
+
+<span class="cp"># install typora
+</span><span class="n">sudo</span> <span class="n">apt</span><span class="o">-</span><span class="n">get</span> <span class="n">install</span> <span class="n">typora</span>
+</code></pre></div></div>
+
+<p><strong>Upgrade Typora</strong></p>
+
+<p>After installing Typora, the <code class="highlighter-rouge">typora</code> package will be managed by <code class="highlighter-rouge">apt-get</code>, so when your system updates installed packages, or you execute <code class="highlighter-rouge">apt-get upgrade</code>, Typora will be updated to latest version.</p>
+
+<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp"># upgrade all packages include Typora
+</span><span class="n">sudo</span> <span class="n">apt</span><span class="o">-</span><span class="n">get</span> <span class="n">upgrade</span>
+</code></pre></div></div>
+
+<p><em>(excerpt from <a href="https://typora.io/">typora.io</a>)</em></p>
+
+<h2 id="atom">Atom</h2>
+
+<p>Modern and beautiful editor. Has an infinite amount of user add on packages for quite every purpose.</p>
+
+<p><strong>Debian and Ubuntu (deb/apt)</strong></p>
+
+<p>You can install Atom on Linux using your distribution’s package  manager by configuring it to use one of our official package  repositories. This will also enable you to update Atom when new releases  are published.</p>
+
+<p>To install Atom on Debian, Ubuntu, or related distributions, add our official
+ package repository to your system by running the following commands:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>wget <span class="nt">-qO</span> - https://packagecloud.io/AtomEditor/atom/gpgkey | <span class="nb">sudo </span>apt-key add -
+<span class="nb">sudo </span>sh <span class="nt">-c</span> <span class="s1">'echo "deb [arch=amd64] https://packagecloud.io/AtomEditor/atom/any/ any main" &gt; /etc/apt/sources.list.d/atom.list'</span>
+<span class="nb">sudo </span>apt-get update
+</code></pre></div></div>
+
+<p>You can now install Atom using <code class="highlighter-rouge">apt-get</code> (or <code class="highlighter-rouge">apt</code> on Ubuntu):</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># Install Atom</span>
+<span class="nb">sudo </span>apt-get <span class="nb">install </span>atom
+<span class="c"># Install Atom Beta</span>
+<span class="nb">sudo </span>apt-get <span class="nb">install </span>atom-beta
+</code></pre></div></div>
+
+<p>Alternatively, you can download the <a href="https://atom.io/download/deb">Atom .deb package</a> and install it directly:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># Install Atom</span>
+<span class="nb">sudo </span>dpkg <span class="nt">-i</span> atom-amd64.deb
+<span class="c"># Install Atom's dependencies if they are missing</span>
+<span class="nb">sudo </span>apt-get <span class="nt">-f</span> <span class="nb">install</span>
+</code></pre></div></div>
+
+<p><em>(excerpt from <a href="https://flight-manual.atom.io/getting-started/sections/installing-atom/">atom.io</a>)</em></p>
+
+<h2 id="anaconda">Anaconda</h2>
+
+<p>For x86 systems.</p>
+
+<ol>
+  <li>
+    <p>In your browser, download the <a href="https://www.anaconda.com/download/#linux">Anaconda installer for Linux</a>.</p>
+  </li>
+  <li>
+    <p>Optional: <a href="https://docs.anaconda.com/anaconda/install/hashes/">Verify data integrity with MD5 or SHA-256</a>. (For more information on hashes, see <a href="https://conda.io/projects/conda/en/latest/user-guide/install/download.html#cryptographic-hash-verification">cryptographic hash validation</a>.)</p>
+
+    <ol>
+      <li>
+        <p>Run the following:</p>
+
+        <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">md5sum</span> /path/filename
+</code></pre></div>        </div>
+
+        <p>OR:</p>
+
+        <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sha256sum</span> /path/filename
+</code></pre></div>        </div>
+
+        <p>NOTE: Replace <code class="highlighter-rouge">/path/filename</code> with the actual path and filename of the file you downloaded.</p>
+      </li>
+      <li>
+        <p>Optional: Verify results against <a href="https://docs.anaconda.com/anaconda/install/hashes/">the proper hash page</a> to make sure the hashes match.</p>
+      </li>
+    </ol>
+  </li>
+  <li>
+    <p>Enter the following to install Anaconda for Python 3.7:</p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>bash ~/Downloads/Anaconda3-5.3.0-Linux-x86_64.sh
+</code></pre></div>    </div>
+
+    <p>OR Enter the following to install Anaconda for Python 2.7:</p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>bash ~/Downloads/Anaconda2-5.3.0-Linux-x86_64.sh
+</code></pre></div>    </div>
+
+    <p>NOTE: Include the <code class="highlighter-rouge">bash</code> command regardless of whether or not you are using Bash shell.</p>
+
+    <p>NOTE: If you did not download to your Downloads directory, replace <code class="highlighter-rouge">~/Downloads/</code> with the path to the file you downloaded.</p>
+
+    <p>NOTE: Choose “Install Anaconda as a user” unless root privileges are required.</p>
+  </li>
+  <li>
+    <p>The installer prompts “In order to continue the installation process, please review the license agreement.” Click Enter to view license terms.</p>
+  </li>
+  <li>
+    <p>Scroll to the bottom of the license terms and enter “Yes” to agree.</p>
+  </li>
+  <li>
+    <p>The installer prompts you to click Enter to accept the default install location, CTRL-C to cancel the installation, or specify an alternate installation directory. If you accept the default install location, the installer displays “PREFIX=/home/<user>/anaconda&lt;2 or 3&gt;” and continues the installation. It may take a few minutes to complete.</user></p>
+  </li>
+  <li>
+    <p>The installer prompts “Do you wish the installer to prepend the Anaconda&lt;2 or 3&gt; install location to PATH in your /home/<user>/.bashrc ?” Enter `Yes`.</user></p>
+
+    <p>NOTE: If you enter “No”, you must manually add the path to Anaconda or conda will not work. See <a href="https://docs.anaconda.com/anaconda/user-guide/faq/#distribution-faq-linux-path">FAQ</a>.</p>
+  </li>
+  <li>
+    <p>The installer describes Microsoft VS Code and asks if you would like to install VS Code. Enter <code class="highlighter-rouge">yes</code> or <code class="highlighter-rouge">no</code>. If you selected <code class="highlighter-rouge">yes</code>, follow the instructions on screen to complete the VS Code installation.</p>
+
+    <p>NOTE: Installing VS Code with the Anaconda installer requires an internet connection. Offline users may be able to find an offline VS Code installer from Microsoft.</p>
+  </li>
+  <li>
+    <p>The installer finishes and displays “Thank you for installing Anaconda&lt;2 or 3&gt;!”</p>
+  </li>
+  <li>
+    <p>Close and open your terminal window for the installation to take effect, or you can enter the command <code class="highlighter-rouge">source ~/.bashrc</code>.</p>
+  </li>
+  <li>
+    <p>After your install is complete, verify it by opening Anaconda Navigator, a program that is included with Anaconda: Open a Terminal window and type <code class="highlighter-rouge">anaconda-navigator</code>. If Navigator opens, you have successfully installed Anaconda. If not, check that you completed each step above, then see our Help page.</p>
+
+    <p>TIP: For more information about Anaconda Navigator, see <a href="https://docs.anaconda.com/anaconda/navigator/">Navigator</a>.</p>
+  </li>
+</ol>
+
+<p>After your install completes, start using Anaconda with the instructions in <a href="https://docs.anaconda.com/anaconda/user-guide/getting-started/">Getting started with Anaconda</a>.</p>
+
+<p>NOTE: If you install multiple versions of Anaconda, the system defaults to the most current version, as long as you haven’t altered the default install path.</p>
+
+<p><em>(excerpt from <a href="https://docs.anaconda.com/anaconda/install/linux/">anaconda.com</a>)</em></p>
+
+<h2 id="android-studio">Android Studio</h2>
+
+<h2 id="tex-studio">Tex Studio</h2>
+
+<h2 id="notepadqq">Notepadqq</h2>
+
+<h2 id="eclipse">Eclipse</h2>
+
+<h2 id="blender">Blender</h2>
+
+<p>Blender is the free and open source 3D creation suite. It supports the
+entirety of the 3D pipeline—modeling, rigging, animation, simulation,
+rendering, compositing and motion tracking, even video editing and game
+creation.</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>apt-get <span class="nb">install </span>blender
+</code></pre></div></div>
+
+<p><em>(excerpt from <a href="https://www.blender.org/">blender.com</a>)</em></p>
+
+<h2 id="git">Git</h2>
+
+<h2 id="jekyll">Jekyll</h2>
+</p>
+        
+        
+        
+        <header class="major">
           <h1>test math2</h1>
         </header>
-        <span class="image main"><img src="/assets/images/pic06.jpg" alt="" /></span>
+        <span class="image main"><img src="/assets/images/joel-filipe.jpg" alt="" /></span>
         <p>2019-05-19 00:00:00 +0200</p>
         <p><script src="/assets/js/p5/p5.min.js"></script>
 
@@ -114,8 +295,10 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
 <h1 id="fourier-series">Fourier Series</h1>
 
 <body>
-  <div id="container"></div>
+
+  <div id="container" class="center"></div>
   <script type="text/javascript" src="/assets/js/animations/fourier_series.js"></script>
+
 </body>
 
 <h2 id="integrals">Integrals</h2>
@@ -180,7 +363,7 @@ T_z = \frac{1}{M}\iiint\limits_G (x 2 + y 2 )ρ(x, y, z)d(x, y, z)</script></p>
 
 <script type="math/tex; mode=display">% <![CDATA[
 \begin{align}
-det\biggl(\frac{\partial(x,y)}{\partial(r,\varphi)}\biggr) 
+det\biggl(\frac{\partial(x,y)}{\partial(r,\varphi)}\biggr)
 & = \biggl(\begin{matrix}cos\varphi & -rsin\varphi\\sin\varphi & rcos\varphi\end{matrix}\biggr) \\
 & =rcos²\varphi+rsin²\varphi=r
 \end{align} %]]></script>

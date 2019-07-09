@@ -8,7 +8,7 @@ nav-menu: true
 type: menu
 image: assets/images/simon-caspersen.jpg
 author: null
-show_tile: false
+show_tile: true
 ---
 
 <h1>All posts</h1>
